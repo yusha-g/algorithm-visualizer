@@ -13,6 +13,6 @@ jobs:
                 uses: psf/black@22.10.0
 
             -   name: ruff
-                uses: astral-sh/ruff-action@v0.14.0
+                uses: astral-sh/ruff-action@v3.5.1
                 with:
                     args: 'format --check'
