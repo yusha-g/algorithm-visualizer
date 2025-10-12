@@ -18,3 +18,10 @@ repos:
       - id: ruff-check
         args: [ --fix ]
       - id: ruff-format
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.11.1  # Replace with the latest stable version
+    hooks:
+      - id: mypy
+        name: Run mypy type checks
+        args: [--strict, --ignore-missing-imports]
+        additional_dependencies: []
